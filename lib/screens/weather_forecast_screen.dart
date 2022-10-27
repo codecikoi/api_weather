@@ -4,7 +4,9 @@ import 'package:api_weather/widgets/temp_view.dart';
 import 'package:flutter/material.dart';
 
 import '../api/weather_api.dart';
+import '../widgets/bottom_list_view.dart';
 import '../widgets/detail_view.dart';
+import 'city_screen.dart';
 
 class WeatherForecastScreen extends StatefulWidget {
   final WeatherForecast? locationWeather;

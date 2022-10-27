@@ -17,8 +17,10 @@ class DetailView extends StatelessWidget {
     var wind = forecastList[0].speed;
 
     return Row(
+      mainAxisSize: MainAxisSize.max,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Util.getItem(FontAwesomeIcons.thermometerThreeQuarters,
+        Util.getItem(FontAwesomeIcons.thermometer,
             pressure.round(), 'mm Hg'),
         Util.getItem(FontAwesomeIcons.cloudRain, humidity, '%'),
         Util.getItem(FontAwesomeIcons.wind, wind.toInt(), 'm/s'),

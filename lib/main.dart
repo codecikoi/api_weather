@@ -1,3 +1,4 @@
+import 'package:api_weather/screens/location_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,26 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: WeatherApp(),
+      home: LocationScreen(),
     );
   }
 }
-
-
-class WeatherApp extends StatefulWidget {
-  const WeatherApp({Key? key}) : super(key: key);
-
-  @override
-  State<WeatherApp> createState() => _WeatherAppState();
-}
-
-class _WeatherAppState extends State<WeatherApp> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-
-    );
-  }
-}
-
-
